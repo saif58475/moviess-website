@@ -1,0 +1,172 @@
+body{
+    background-color: black;
+    opacity: .8;
+    color:aliceblue
+}
+
+/* the css of the side bar  */
+.side-bar{
+    
+    position: fixed;
+    margin-left: -230px;
+    
+}
+.side-bar .control-bar{
+  width: 50px;
+}
+.side-bar .control-bar .middle-of-bar{
+    margin-top: 250px;
+}
+.side-bar .control-bar .bottom-of-bar{
+    margin-top: 300px;
+}
+#controlicon{
+  cursor:pointer
+}
+
+.side-bar1{
+    
+    position: fixed;
+    margin-left: -230px;
+    z-index: 1;
+  transition: ease-in 3s;
+}
+
+.side-bar1 .control-bar{
+  width: 50px;
+}
+.side-bar1 .control-bar .middle-of-bar{
+    margin-top: 250px;
+}
+.side-bar1 .control-bar .bottom-of-bar{
+    margin-top: 300px;
+}
+
+.list{
+  width:200px;
+  padding:15px 10px;
+  border-bottom:1px solid #444;
+  background-color:black;
+  text-transform:uppercase;
+  font-size:6px;
+  transition: ease-in 0.5s;
+}
+.list1{
+  width:200px;
+  margin-left: 180px;
+  padding:30px 10px;
+  border-bottom:1px solid #444;
+  background-color:black;
+  text-transform:uppercase;
+  font-size:18px;
+  transition: ease-in 1s;
+}
+
+.list .itemli a{
+  text-decoration: none;
+  color:white;
+  margin-top: 20px;
+}
+.list1 .itemli a{
+  text-decoration: none;
+  color:white;
+  margin-top: 20px;
+}
+
+
+/* the movie card */
+/* .movie-card{
+    
+} */
+.movie-card img{
+    border-radius: 20px;
+}
+
+/* .movie-card .over-movie{
+    width: 100%;
+    height: 100%;
+    background-color: burlywood;
+    opacity: 0.7;
+} */
+
+
+
+
+.item{
+    height:auto;
+    
+}
+.item:hover{
+    cursor:pointer;
+}
+.item:hover .item-overlay.top {
+    top: 0;
+    
+  }
+  .item:hover .item-overlay.right {
+    right: 0;
+    left: 0;
+  }
+  .item:hover .item-overlay.bottom {
+    bottom: 0;
+  }
+  .item:hover .item-overlay.left {
+    left: 0;
+  }
+  
+  /* 
+  by default, overlay is visible… 
+  */
+  .item-overlay {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    border-radius: 20px;
+    background: rgb(255, 255, 255,0.7);
+    color:black;
+    overflow: hidden;
+    text-align: center;
+    /* fix text transition issue for .left and .right but need to overwrite left and right properties in .right */
+    width: 100%; 
+    font-size: 0.9rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    transition: top 1.5s, right 0.3s, bottom 0.3s, left 0.3s;
+  }
+  /*
+  …but this hide it
+  */
+  .item-overlay.top {
+    top: 100%;
+  }
+  .item-overlay.right {
+    right: 200%;
+    left: -100%;
+  }
+  .item-overlay.bottom {
+    bottom: 100%;
+  }
+  .item-overlay.left {
+    left: 100%;
+  }
+  
+  
+  
+  .item {
+    position: relative;
+    overflow: hidden;
+
+  }
+  .item img {
+    max-width: 100%;
+  }
+
+
+  /* for buttons */
+  .indexeditor{
+    z-index: 33;
+  }
+  .btnupdate{
+    background-color: transparent;
+    border:0px;
+    border-bottom: 1px solid white;
+  }
